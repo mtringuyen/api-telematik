@@ -3,3 +3,4 @@ validation.jenkinsfile
 gitHubPublish.jenkinsfile
 gitHubPull.jenkinsfile
 
+.DS_Store

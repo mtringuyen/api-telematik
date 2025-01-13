@@ -2,6 +2,38 @@
  
 # Release Notes api-telematik
 
+## Release Consumer 1.2.1
+- Add OptionalInputs to ExternalAuthenticate
+  
+## Release Consumer 1.2.0
+- C_12110: Enable Consumer to sign an access permission to the ePA 3.0 using plain ECDSA signatures
+
+## Release 6.0.0-2
+- Fix of invalid Schema in CardService
+
+## Release Consumer 1.1.0
+- Remove OptionalInputs from Operation ExternalAuthenticate
+- C_11771: Semantic Changes in EncryptionService
+
+## Release 6.0.0
+- Extension of operating data in CertificateDataType with Cryptography
+- Clarification of connector status information format (similar to GetResourceInformation)
+- Removal of Elements "TlsCertSource" and "TlsKeyCrypt" in order to avoid adaptations of OperatingData_vpnzugd_hardened.xsd
+- Support of PoPP-26 Feature by adding operations SecureSendAPDU, StartCardSession and StopCardSession in CardService
+- Comfort Signature: Integrate error handling of error 4018 inside the operation ActivateComfortSignature
+- eIDAS compliant semantic changes in SignatureService 7.4
+- Removal of older 7.4 and 7.5 versions of SignatureService
+
+## Release 5.0.8
+- C_11600: Extend OperatingData with used TLS-Certificate Source and Algorithm at the Client System Interface
+
+## Release Consumer 1.0.0-1
+- Fix: add missing SOAP operations for ReadCertificate
+- Fix: update Consumer SOAP actions to match correct WSDL namespace versions
+
+## Release Consumer 1.0.0
+- Extend Consumer Operations for "ePA für alle"
+
 ## Release 5.0.7
 - VSDM: add new DMP elements to documentation in xsd schema
 - (editorial) refine project readme
