@@ -443,7 +443,7 @@
                 <element ref="CONN:Status"/>
                 <element name="ComfortSignatureStatus" type="SIG:ComfortSignatureStatusEnum"/>
                 <element name="ComfortSignatureMax" type="SIG:CountType"/>
-                <element name="ComfortSignatureTimer" type="duration"/>
+                <element name="ComfortSignatureTimer" type="string"/>
                 <element ref="SIG:SessionInfo" minOccurs="0"/>
             </sequence>
         </complexType>
@@ -453,7 +453,7 @@
             <sequence>
                 <element ref="SIG:SignatureMode"/>
                 <element name="CountRemaining" type="SIG:CountType"/>
-                <element name="TimeRemaining" type="duration"/>
+                <element name="TimeRemaining" type="string"/>
             </sequence>
         </complexType>
     </element>

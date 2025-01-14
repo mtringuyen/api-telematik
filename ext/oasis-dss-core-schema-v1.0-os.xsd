@@ -35,7 +35,7 @@
 		<xs:attribute name="ID" type="xs:ID" use="optional"/>
 		<xs:attribute name="RefURI" type="xs:anyURI" use="optional"/>
 		<xs:attribute name="RefType" type="xs:anyURI" use="optional"/>
-		<xs:attribute name="SchemaRefs" type="xs:IDREFS" use="optional"/>
+		<xs:attribute name="SchemaRefs" type="xs:string" use="optional"/>
 	</xs:complexType>
 	<xs:element name="Document" type="dss:DocumentType"/>
 	<xs:complexType name="DocumentType">
@@ -105,7 +105,7 @@
 					<xs:element name="Other" type="dss:AnyType"/>
 				</xs:choice>
 			</xs:sequence>
-			<xs:attribute name="SchemaRefs" type="xs:IDREFS" use="optional"/>
+			<xs:attribute name="SchemaRefs" type="xs:string" use="optional"/>
 		</xs:complexType>
 	</xs:element>
 	<xs:element name="Base64Signature">
@@ -412,7 +412,7 @@
 				<xs:element name="SerialNumber" type="xs:integer"/>
 				<xs:element name="CreationTime" type="xs:dateTime"/>
 				<xs:element name="Policy" type="xs:anyURI" minOccurs="0"/>
-				<xs:element name="ErrorBound" type="xs:duration" minOccurs="0"/>
+				<xs:element name="ErrorBound" type="xs:string" minOccurs="0"/>
 				<xs:element name="Ordered" type="xs:boolean" default="false" minOccurs="0"/>
 				<xs:element name="TSA" type="saml:NameIdentifierType" minOccurs="0"/>
 			</xs:sequence>

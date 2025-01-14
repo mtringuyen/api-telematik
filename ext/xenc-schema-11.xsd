@@ -37,11 +37,11 @@
         <sequence>
             <element ref="ds:DigestMethod"/>
         </sequence>
-        <attribute name="AlgorithmID" type="hexBinary"/>
-        <attribute name="PartyUInfo" type="hexBinary"/>
-        <attribute name="PartyVInfo" type="hexBinary"/>
-        <attribute name="SuppPubInfo" type="hexBinary"/>
-        <attribute name="SuppPrivInfo" type="hexBinary"/>
+        <attribute name="AlgorithmID" type="string"/>
+        <attribute name="PartyUInfo" type="string"/>
+        <attribute name="PartyVInfo" type="string"/>
+        <attribute name="SuppPubInfo" type="string"/>
+        <attribute name="SuppPrivInfo" type="string"/>
     </complexType>
     <element name="DerivedKey" type="xenc11:DerivedKeyType"/>
     <complexType name="DerivedKeyType">

@@ -14,13 +14,7 @@
 	<element name="CardType" type="CARDCMN:CardTypeType"/>
 	<element name="CtId" type="CARDCMN:CtIdType"/>
 	<element name="SlotId" type="CARDCMN:SlotIdType"/>
-	<element name="Iccsn">
-		<simpleType>
-			<restriction base="CARDCMN:IccsnType">
-				<pattern value="[0-9]{20}"/>
-			</restriction>
-		</simpleType>
-	</element>
+	<element name="Iccsn" type="CARDCMN:IccsnType"/>
 	<element name="PinTyp" type="CARDCMN:PinTypType"/>
 	<element name="PinResult" type="CARDCMN:PinResultEnum"/>
 	<simpleType name="KvnrType">

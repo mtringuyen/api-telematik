@@ -459,8 +459,8 @@
             <extension base="tns:RegistryObjectType">
                 <attribute name="operator" type="tns:referenceURI" use="required"/>
                 <attribute name="specificationVersion" type="string" use="required"/>
-                <attribute name="replicationSyncLatency" type="duration" use="optional" default="P1D"/>
-                <attribute name="catalogingLatency" type="duration" use="optional" default="P1D"/>
+                <attribute name="replicationSyncLatency" type="string" use="optional" default="P1D"/>
+                <attribute name="catalogingLatency" type="string" use="optional" default="P1D"/>
                 <attribute name="conformanceProfile" use="optional" default="registryLite">
                     <simpleType>
                         <restriction base="NCName">
@@ -479,7 +479,7 @@
         </annotation>
         <complexContent>
             <extension base="tns:RegistryObjectType">
-                <attribute name="replicationSyncLatency" type="duration" use="optional" default="P1D"/>
+                <attribute name="replicationSyncLatency" type="string" use="optional" default="P1D"/>
             </extension>
         </complexContent>
     </complexType>
@@ -539,7 +539,7 @@
                 <attribute name="selector" type="tns:referenceURI" use="required"/>
                 <attribute name="startTime" type="dateTime" use="optional"/>
                 <attribute name="endTime" type="dateTime" use="optional"/>
-                <attribute name="notificationInterval" type="duration" use="optional" default="P1D"/>
+                <attribute name="notificationInterval" type="string" use="optional" default="P1D"/>
             </extension>
             <!-- Ref to a AdhocQueryType instance -->
         </complexContent>

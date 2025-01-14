@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="US-ASCII"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- gematik revision="\main\rel_online\1" -->
 <schema
     targetNamespace="urn:oasis:names:tc:SAML:2.0:assertion"

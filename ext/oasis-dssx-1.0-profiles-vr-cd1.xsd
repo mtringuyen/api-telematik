@@ -206,7 +206,7 @@
 					</sequence>
 				</complexType>
 			</element>
-			<element name="IssuerUniqueID" type="hexBinary" minOccurs="0"/>
+			<element name="IssuerUniqueID" type="string" minOccurs="0"/>
 			<element name="Extensions" type="vr:ExtensionsType" minOccurs="0"/>
 		</sequence>
 	</complexType>
@@ -399,8 +399,8 @@
 				<complexType>
 					<sequence>
 						<element name="HashAlgorithm" type="anyURI"/>
-						<element name="IssuerNameHash" type="hexBinary"/>
-						<element name="IssuerKeyHash" type="hexBinary"/>
+						<element name="IssuerNameHash" type="string"/>
+						<element name="IssuerKeyHash" type="string"/>
 						<element name="SerialNumber" type="integer"/>
 					</sequence>
 				</complexType>
@@ -543,7 +543,7 @@
 	</complexType>
 	<complexType name="HashValueType">
 		<sequence>
-			<element name="HashValue" type="hexBinary"/>
+			<element name="HashValue" type="string"/>
 		</sequence>
 		<attribute name="HashedObject" type="IDREF" use="optional"/>
 	</complexType>

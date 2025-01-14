@@ -256,7 +256,7 @@
       <xs:sequence>
          <xs:element name="caption" type="StrucDoc.Caption" minOccurs="0"/>
       </xs:sequence>
-      <xs:attribute name="referencedObject" type="xs:IDREFS" use="required"/>
+      <xs:attribute name="referencedObject" type="xs:string" use="required"/>
       <xs:attribute name="ID" type="xs:ID"/>
       <xs:attribute name="language" type="xs:NMTOKEN"/>
       <xs:attribute name="styleCode" type="xs:NMTOKENS"/>
@@ -358,7 +358,7 @@
       <xs:attribute name="styleCode" type="xs:NMTOKENS"/>
       <xs:attribute name="abbr" type="xs:string"/>
       <xs:attribute name="axis" type="xs:string"/>
-      <xs:attribute name="headers" type="xs:IDREFS"/>
+      <xs:attribute name="headers" type="xs:string"/>
       <xs:attribute name="scope">
          <xs:simpleType>
             <xs:restriction base="xs:NMTOKEN">
@@ -442,7 +442,7 @@
       <xs:attribute name="styleCode" type="xs:NMTOKENS"/>
       <xs:attribute name="abbr" type="xs:string"/>
       <xs:attribute name="axis" type="xs:string"/>
-      <xs:attribute name="headers" type="xs:IDREFS"/>
+      <xs:attribute name="headers" type="xs:string"/>
       <xs:attribute name="scope">
          <xs:simpleType>
             <xs:restriction base="xs:NMTOKEN">
